@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    margin-top: 4px;
+}
+html{
+    background-color: aliceblue;
+}
+.logo > img{
+    background-blend-mode: multiply;
+}
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+.text{
+    text-align: center;
+    padding: 40px;
+}
+.list-content{
+    max-width: 1250px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 300px 300px 300px;
+    margin: 0 auto;
+    gap: 20px;
+    /* background-color: bisque; */
+}
+.nav>a{
+    padding: 25px;
+}
+.more{
+    color: chocolate;
+}
+li{
+    list-style: none;
+}
+
+ul>li{
+    padding: 4px;
+}
+.curent{
+    box-shadow:chocolate 5px -9px 3px 1px;
+    border-radius: 20px;
+    color:peru;
+}
+.card{
+    text-align: center;
+    font-size: 19px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    border-radius: 25px;
+}
+.card>h3{
+    padding: 12px;
+}
+footer{
+    display: flex;
+    background-color:#DFDFDE;
+    padding: 2rem;
+    justify-content: end;
+}
+.foot{
+    display: flex;
+    width: 350px;
+    gap: 20px;
+}
+p{
+    font-weight: 500;
+    padding: 10px;
+    color:red;
+    font-size: large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    word-spacing: 9px;
+    letter-spacing: 2px;
+}
+.card{
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 20px 20px 200px 90px;
+}
+.card>ul>li>a{
+    color:seashell;
+}
+.card>h3{
+    color:tomato    ;
+}
+.card-1{
+    background-image: url(./img/CSC.webp);
+}
+.card-2{
+    background-image: url(./img/es.png);
+}
+.card-3{
+    background-image: url(./img/digital.png);
+    background-blend-mode:hard-light;
+    background-position: right;
+}
+.card-4{
+    background-image: url(./img/home-insurance-logo-vector-4700324.jpg);
+}
+.card-5{
+    background-image: url(./img/bank.jpeg);
+}
+.card-6{
+    background-image: url(./img/ticket.webp);
+    /* mix-blend-mode: multiply; */
+    background-blend-mode:multiply;
+}
