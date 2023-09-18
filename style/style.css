@@ -7,7 +7,7 @@ html{
     background-color: aliceblue;
 }
 .logo > img{
-    background-blend-mode: multiply;
+    mix-blend-mode: multiply;
 }
 header{
     display: flex;
@@ -50,9 +50,9 @@ ul>li{
     padding: 4px;
 }
 .curent{
-    box-shadow:chocolate 5px -9px 3px 1px;
+
     border-radius: 20px;
-    color:peru;
+    color:rgb(158, 4, 4);
 }
 .card{
     text-align: center;
@@ -91,33 +91,62 @@ p{
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: inset 20px 20px 200px 90px;
 }
 .card>ul>li>a{
-    color:seashell;
-}
-.card>h3{
-    color:tomato    ;
+    color:azure;
 }
 .card-1{
-    background-image: url(./img/CSC.webp);
+    background-color: #C6433B;
 }
 .card-2{
-    background-image: url(./img/es.png);
+    background-color: #7A7B4D;
 }
 .card-3{
-    background-image: url(./img/digital.png);
-    background-blend-mode:hard-light;
-    background-position: right;
+    background-color: #74B1CA;
 }
 .card-4{
-    background-image: url(./img/home-insurance-logo-vector-4700324.jpg);
+    background-color: #C6433B;
 }
 .card-5{
-    background-image: url(./img/bank.jpeg);
+    background-color: #7ABA4E;
 }
 .card-6{
-    background-image: url(./img/ticket.webp);
-    /* mix-blend-mode: multiply; */
-    background-blend-mode:multiply;
+    background-color: #7A7B4D;
+}
+
+ul{
+    display: none;
+}
+ .dis{
+    display: contents;
+} 
+
+.card >p{
+    border: 1.5px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .list-content{
+        justify-content: center;
+        grid-template-columns: 350px;
+        grid-template-rows: repeat(6,400px)
+        /* margin: 0 1rem; */
+    }
+    .nav{
+        width: fit-content;
+    }
+    .nav>a{
+        font-size: 12px;
+        padding: 15px;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo>img{
+        width:45%;
+    }
 }
